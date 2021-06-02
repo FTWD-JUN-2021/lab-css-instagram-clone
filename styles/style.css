@@ -4,6 +4,14 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  transition: all 1s;
+}
+
+*:active {
+  filter: invert(100%);
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -18,23 +26,49 @@ body {
 
 section {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.phones {
-  border: 8px solid blue;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.description {
-  background: white;
+button {
+  background-color: #1c5380;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .text {
   background-image: url(../images/frame.png);
   background-repeat: no-repeat;
+  padding: 20px;
+
+}
+
+.text h1 {
+  color: #1c5380;
+}
+
+.text p {
+  margin: 20px;
+  width: 451px;
 }
 
 footer ul{
   display: flex;
   flex-direction: row;
   list-style: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.download {
+
 }

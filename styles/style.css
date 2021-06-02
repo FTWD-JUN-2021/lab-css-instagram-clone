@@ -17,7 +17,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-image: url(/images/bgtile.png);
+  background-image: url(./images/bgtile.png);
   background-repeat: repeat-x;
   justify-content: center;
   align-items: center;
